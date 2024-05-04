@@ -1,5 +1,5 @@
 # nuh_uh_transphobia
-Fake Information by [Fake Name Generator](https://www.fakenamegenerator.com "Fake Name Generator"), and answers to the questions by ChatGPT
+Fake Information by [Fake Name Generator](https://www.fakenamegenerator.com "Fake Name Generator"), and answers to the questions by [ChatGPT](https://chatgpt.com "ChatGPT")
 
 ## instructions
 1. install python
