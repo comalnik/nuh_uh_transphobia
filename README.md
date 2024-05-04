@@ -1,4 +1,5 @@
 # nuh_uh_transphobia
+- trolling [these people](https://ut-sao-special-prod.web.app/sex_basis_complaint.html "these people")
 Fake Information by [Fake Name Generator](https://www.fakenamegenerator.com "Fake Name Generator"), and answers to the questions by [ChatGPT](https://chatgpt.com "ChatGPT")
 
 ## instructions
