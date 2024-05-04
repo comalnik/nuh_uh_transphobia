@@ -128,7 +128,7 @@ Canyonlands Healthcare Special Service District
 Canyons School District
 Capitol Preservation Board
 Carbon County
-Carbon County Recreation &amp; Transportation SSD
+Carbon County Recreation & Transportation SSD
 Carbon County Redevelopment Agency
 Carbon School District
 Carbon Water Conservancy District
@@ -180,8 +180,8 @@ Clinton Sanitary Sewer SSD
 Coalville City
 College-Young Mosquito Abatement District
 Color Country Uniserv
-Comm. Dev. &amp; Renewal Agency for Brian Head Town
-Comm. Dev. &amp; Renewal Agency of Herriman
+Comm. Dev. & Renewal Agency for Brian Head Town
+Comm. Dev. & Renewal Agency of Herriman
 Commerce, Department of
 Commission on Criminal and Juvenile Justice
 Community Education Channel Agency
@@ -347,7 +347,7 @@ Firefly Public Infrastructure District 7
 Firefly Public Infrastructure District 8
 Firefly Public Infrastructure District 9
 Five County Association of Governments
-Flaming Gorge Fire &amp; EMS District
+Flaming Gorge Fire & EMS District
 Flaming Gorge Roads and Transportation SSD
 Fountain Green City
 Four Corners Community Behavioral Health, Inc.
@@ -425,7 +425,7 @@ Hatch Town
 Hawthorn Academy
 Heber City
 Heber City Community Reinvestment Agency
-Heber Light &amp; Power Company
+Heber Light & Power Company
 Heber Valley Historic Railroad Authority
 Heber Valley Special Service District
 Heber Valley Tourism and Economic Development Agency
@@ -527,7 +527,7 @@ Labor Commission
 Lake Point
 Lake Point Cemetery and Parks Service Area
 Lake Point Improvement District
-Lakeshore &amp; Benjamin Drainage District
+Lakeshore & Benjamin Drainage District
 Laketown Cemetery Maintenance District
 Laketown Fire District
 Laketown Town
@@ -585,7 +585,7 @@ Meadow Town
 Medical School Campus Public Infrastructure District
 Mendon City
 Merit College Preparatory Academy
-Metropolitan Water District of Salt Lake &amp; Sandy
+Metropolitan Water District of Salt Lake & Sandy
 Mexican Hat Special Service District
 Midvale City
 Midvale City Redevelopment Agency
@@ -699,7 +699,7 @@ North View Fire District
 North Village Special Service District
 Northeastern Counseling Center
 Northeastern Utah Educational Services
-Northern Utah Academy for Math, Engineering &amp; Science
+Northern Utah Academy for Math, Engineering & Science
 Northern Utah Conservation District
 Northern Utah Environmental Resource Agency
 Northwestern Special Service District
@@ -1104,7 +1104,7 @@ Utah Counties Indemnity Pool
 Utah County
 Utah County Academy of Sciences
 Utah County Housing Authority
-Utah County Service Areas 6, 7, 8 &amp; 9
+Utah County Service Areas 6, 7, 8 & 9
 Utah Dairy Commission
 Utah Energy Infrastructure Authority
 Utah Fund of Funds
