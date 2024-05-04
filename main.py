@@ -12,10 +12,11 @@ import os
 import csv
 
 
+score = 0
 while True:
+    #get fake details
     lines = 3000
     random_line_num = random.randint(1, lines - 1)
-
     with open("fake-details/FakeNameGenerator.com.csv") as fakes:
         reader = csv.reader(fakes)
         for i, row in enumerate(reader):
@@ -47,17 +48,17 @@ while True:
 
     with open("fake_fields/evidence.txt", "r") as file:
         evidence = random.choice(file.readlines())
-        
+
+
+    
     options = Options()
     #options.add_experimental_option("detach", True)
 
     #random useragent(from fake details csv)
     options.add_argument("user-agent=" + useragent)
 
-
+    #start webdriver
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-
-
     driver.get("https://ut-sao-special-prod.web.app/sex_basis_complaint2.html")
     driver.maximize_window()
 
@@ -65,7 +66,7 @@ while True:
 
 
 
-
+    #couldnt figure out selenium explicit waits
     def load_check():
         try:
             time.sleep(1)
@@ -75,19 +76,18 @@ while True:
 
     load_check()
 
-
-
+    #input entity
     entity_input = driver.find_element(By.XPATH, '//*[@id="form-row"]/form/div[1]/div/div[1]/input');
-
     entity_input.send_keys(random_entity)
 
+    #checkboxes
     random_num1 = random.randint(1,9)
-    entity_input = driver.find_element(By.ID, 'cb' + str(random_num1));
+    checkbox_input = driver.find_element(By.ID, 'cb' + str(random_num1));
     action = ActionChains(driver)
-    action.move_to_element(entity_input).perform()
-    action.click(entity_input).perform()
+    action.move_to_element(checkbox_input).perform()
+    action.click(checkbox_input).perform()
 
-
+    #writing fields
     who_field = driver.find_element(By.XPATH, '//*[@id="cd_q1"]/div[1]');
     who_field.send_keys(who)
 
@@ -103,6 +103,7 @@ while True:
     evidence_field = driver.find_element(By.XPATH, '//*[@id="cd_q5"]/div[1]');
     evidence_field.send_keys(evidence)
 
+    #anonymity checkboxes
     random_num2 = random.randint(1,3)
     if random_num2 == 1:
         random_anon = "00N1K00000fXXXy"
@@ -116,7 +117,7 @@ while True:
     action.click(anonymity_input).perform()
 
 
-
+    #fake details input
     name = driver.find_element(By.XPATH, '//*[@id="00N1K00000fX1ND"]');
     name.send_keys(name_detail)
 
@@ -131,7 +132,7 @@ while True:
 
 
 
-
+    #acknowledgement checkboxes
     ack1 = driver.find_element(By.ID, "check_certify");
     action.move_to_element(ack1).perform()
     action.click(ack1).perform()
@@ -140,12 +141,15 @@ while True:
     action.move_to_element(ack2).perform()
     action.click(ack2).perform()
 
-
+    #submit
     submit = driver.find_element(By.ID, "btn-submit-complaint2");
     action.move_to_element(submit).perform()
     action.click(submit).perform()
+
     
     time.sleep(2)
+    score = score + 1
+    print(score)
     driver.close()
 
 # :3
