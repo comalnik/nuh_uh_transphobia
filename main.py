@@ -61,6 +61,7 @@ while True:
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
     driver.get("https://ut-sao-special-prod.web.app/sex_basis_complaint2.html")
     driver.maximize_window()
+    solver = RecaptchaSolver(driver=driver)
 
 
 
@@ -141,6 +142,11 @@ while True:
     action.move_to_element(ack2).perform()
     action.click(ack2).perform()
 
+    #solve captcha
+    recaptcha_iframe = driver.find_element(By.XPATH, '//*[@id="form-row"]/form/div[30]/div/div/iframe')
+    action.move_to_element(recaptcha_iframe).perform()
+    solver.click_recaptcha_v2(iframe=recaptcha_iframe)
+    
     #submit
     submit = driver.find_element(By.ID, "btn-submit-complaint2");
     action.move_to_element(submit).perform()
