@@ -12,7 +12,7 @@ import random
 import os
 import csv
 
-
+solve_captcha = False
 score = 0
 while True:
     #get fake details
@@ -144,9 +144,14 @@ while True:
     action.click(ack2).perform()
 
     #solve captcha
-    recaptcha_iframe = driver.find_element(By.XPATH, '//*[@id="form-row"]/form/div[30]/div/div/iframe')
-    action.move_to_element(recaptcha_iframe).perform()
-    solver.click_recaptcha_v2(iframe=recaptcha_iframe)
+    if solve_captcha == True:
+        try:
+            recaptcha_iframe = driver.find_element(By.XPATH, '//*[@id="form-row"]/form/div[30]/div/div/iframe')
+            action.move_to_element(recaptcha_iframe).perform()
+            solver.click_recaptcha_v2(iframe=recaptcha_iframe)
+            
+        except:
+            pass
     
     #submit
     submit = driver.find_element(By.ID, "btn-submit-complaint2");
