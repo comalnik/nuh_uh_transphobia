@@ -7,4 +7,5 @@
 2. clone or download this repo.
 3. run ```pip install -r requirements.txt```
 4. double click the file or run ```python main.py``` in terminal/cmd
+- you can toggle captcha solving by setting ```solve_captcha = False``` or ```solve_captcha = True```
 
